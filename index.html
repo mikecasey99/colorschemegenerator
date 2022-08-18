@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap" rel="stylesheet"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Color Picker</title>
+</head>
+<body>
+    <h1>Generate a Color Scheme</h1>
+    <div class="container">
+        <div class="header">
+            <header>
+                <input type="color" name="colorPick" id="colorPick">
+                <label for="colorPick">
+                    <select name="color-dropdown" id="dropdown">
+                        <option value="Monochrome">Monochrome</option>
+                        <option value="Monochrome-dark">Monochrome-dark</option>
+                        <option value="Monochrome-light">Monochrome-light</option>
+                        <option value="Analogic">Analogic</option>
+                        <option value="Complement">Complement</option>
+                        <option value="Analogic-complement">Analogic-complement</option>
+                        <option value="Triad">Triad</option>
+                      </select>
+                </label>
+                <button id="btn">Get color scheme</button>
+            </header>
+        </div>
+        <div class="colorDisplay">
+            <div class="bar" id="color-1"><h2></h2></div>
+            <div class="bar" id="color-2"></div>
+            <div class="bar" id="color-3"></div>
+            <div class="bar" id="color-4"></div>
+            <div class="bar" id="color-5"></div>
+        </div>
+        <div class="hex">
+            <span id="hex-1">#040490</span>
+            <span id="hex-2">#2F0395</span>
+            <span id="hex-3">#5E029B</span>
+            <span id="hex-4">#9102A1</span>
+            <span id="hex-5">#A70186</span>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
